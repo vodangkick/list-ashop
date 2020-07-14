@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/list-ashop/static/css/main.f63b579c.chunk.css",
-    "main.js": "/list-ashop/static/js/main.8bea55ef.chunk.js",
-    "main.js.map": "/list-ashop/static/js/main.8bea55ef.chunk.js.map",
+    "main.js": "/list-ashop/static/js/main.2a4b3ed7.chunk.js",
+    "main.js.map": "/list-ashop/static/js/main.2a4b3ed7.chunk.js.map",
     "runtime-main.js": "/list-ashop/static/js/runtime-main.5043f45a.js",
     "runtime-main.js.map": "/list-ashop/static/js/runtime-main.5043f45a.js.map",
     "static/css/2.d34346ea.chunk.css": "/list-ashop/static/css/2.d34346ea.chunk.css",
-    "static/js/2.698524dd.chunk.js": "/list-ashop/static/js/2.698524dd.chunk.js",
-    "static/js/2.698524dd.chunk.js.map": "/list-ashop/static/js/2.698524dd.chunk.js.map",
+    "static/js/2.7b2030c8.chunk.js": "/list-ashop/static/js/2.7b2030c8.chunk.js",
+    "static/js/2.7b2030c8.chunk.js.map": "/list-ashop/static/js/2.7b2030c8.chunk.js.map",
     "index.html": "/list-ashop/index.html",
-    "precache-manifest.cc05eca9a535f2e637d70b4092cdab32.js": "/list-ashop/precache-manifest.cc05eca9a535f2e637d70b4092cdab32.js",
+    "precache-manifest.789e040ee483f2f6c6b9b2389dfab4f5.js": "/list-ashop/precache-manifest.789e040ee483f2f6c6b9b2389dfab4f5.js",
     "service-worker.js": "/list-ashop/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/list-ashop/static/css/2.d34346ea.chunk.css.map",
     "static/css/main.f63b579c.chunk.css.map": "/list-ashop/static/css/main.f63b579c.chunk.css.map",
-    "static/js/2.698524dd.chunk.js.LICENSE.txt": "/list-ashop/static/js/2.698524dd.chunk.js.LICENSE.txt",
+    "static/js/2.7b2030c8.chunk.js.LICENSE.txt": "/list-ashop/static/js/2.7b2030c8.chunk.js.LICENSE.txt",
     "static/media/f-p-1.jpg": "/list-ashop/static/media/f-p-1.d108147d.jpg",
     "static/media/f-p-2.jpg": "/list-ashop/static/media/f-p-2.d5f8299c.jpg",
     "static/media/f-p-3.jpg": "/list-ashop/static/media/f-p-3.1955777a.jpg",
@@ -21,13 +21,14 @@
     "static/media/f-p-5.jpg": "/list-ashop/static/media/f-p-5.7f1ba10f.jpg",
     "static/media/f-p-6.jpg": "/list-ashop/static/media/f-p-6.14938930.jpg",
     "static/media/f-p-7.jpg": "/list-ashop/static/media/f-p-7.01bd709a.jpg",
-    "static/media/f-p-8.jpg": "/list-ashop/static/media/f-p-8.85ea319c.jpg"
+    "static/media/f-p-8.jpg": "/list-ashop/static/media/f-p-8.85ea319c.jpg",
+    "static/media/logo.svg": "/list-ashop/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5043f45a.js",
     "static/css/2.d34346ea.chunk.css",
-    "static/js/2.698524dd.chunk.js",
+    "static/js/2.7b2030c8.chunk.js",
     "static/css/main.f63b579c.chunk.css",
-    "static/js/main.8bea55ef.chunk.js"
+    "static/js/main.2a4b3ed7.chunk.js"
   ]
 }

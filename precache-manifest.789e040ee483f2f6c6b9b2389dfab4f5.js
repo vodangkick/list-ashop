@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2a324d7d87e097825df5511b816e0e3",
+    "revision": "52dcdb3d3a908107c71fb17ed9023500",
     "url": "/list-ashop/index.html"
   },
   {
-    "revision": "789cd859a04ada7bc0bc",
+    "revision": "2783b54ce25edfed1667",
     "url": "/list-ashop/static/css/2.d34346ea.chunk.css"
   },
   {
-    "revision": "0a435c6391e15f849f1f",
+    "revision": "707f74314e039d9722ad",
     "url": "/list-ashop/static/css/main.f63b579c.chunk.css"
   },
   {
-    "revision": "789cd859a04ada7bc0bc",
-    "url": "/list-ashop/static/js/2.698524dd.chunk.js"
+    "revision": "2783b54ce25edfed1667",
+    "url": "/list-ashop/static/js/2.7b2030c8.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/list-ashop/static/js/2.698524dd.chunk.js.LICENSE.txt"
+    "url": "/list-ashop/static/js/2.7b2030c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a435c6391e15f849f1f",
-    "url": "/list-ashop/static/js/main.8bea55ef.chunk.js"
+    "revision": "707f74314e039d9722ad",
+    "url": "/list-ashop/static/js/main.2a4b3ed7.chunk.js"
   },
   {
     "revision": "a628aad7dcc792cfbed0",
@@ -58,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "85ea319c843ef0a4edf6547b5c7adce8",
     "url": "/list-ashop/static/media/f-p-8.85ea319c.jpg"
+  },
+  {
+    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
+    "url": "/list-ashop/static/media/logo.5d5d9eef.svg"
   }
 ]);
