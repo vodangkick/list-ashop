@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import logo from "./logo.svg";
 // import { Switch, Route } from 'react-router-dom';
 // import Home from "./pages/Home";
 // import Shop from './pages/Shop';
@@ -14,8 +15,8 @@ import './App.css';
 
 function App() {
   return (
-    <>]
-    test
+    <>
+      <img src={logo} alt="logo" />
       {/* <ScrollToTop />
       <Switch>
         <Route path='/' exact component={Home} />
