@@ -1,23 +1,21 @@
 import React from 'react';
 import './App.css';
-import logo from "./logo.svg";
-// import { Switch, Route } from 'react-router-dom';
-// import Home from "./pages/Home";
-// import Shop from './pages/Shop';
-// import Blog from './pages/Blog';
-// import Contact from './pages/Contact';
-// import Cart from './pages/Cart';
-// import CheckOut from './pages/CheckOut';
+import { Switch, Route } from 'react-router-dom';
+import Home from "./pages/Home";
+import Shop from './pages/Shop';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Cart from './pages/Cart';
+import CheckOut from './pages/CheckOut';
 
-// import ProductDetail from './pages/ProductDetail';
-// import ScrollToTop from './components/ScrollToTop';
+import ProductDetail from './pages/ProductDetail';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
   return (
     <>
-      <img src={logo} alt="logo" />
-      {/* <ScrollToTop />
+      <ScrollToTop />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/shop' component={Shop} />
@@ -26,7 +24,7 @@ function App() {
         <Route path='/cart' component={Cart} />
         <Route path='/:slug' component={ProductDetail} />
         <Route path='/checkout' component={CheckOut} />
-      </Switch> */}
+      </Switch>
     </>
   );
 }
