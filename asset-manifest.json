@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/list-ashop/static/css/main.f63b579c.chunk.css",
-    "main.js": "/list-ashop/static/js/main.b74c6da9.chunk.js",
-    "main.js.map": "/list-ashop/static/js/main.b74c6da9.chunk.js.map",
+    "main.js": "/list-ashop/static/js/main.c022df90.chunk.js",
+    "main.js.map": "/list-ashop/static/js/main.c022df90.chunk.js.map",
     "runtime-main.js": "/list-ashop/static/js/runtime-main.b672ec0a.js",
     "runtime-main.js.map": "/list-ashop/static/js/runtime-main.b672ec0a.js.map",
     "static/css/2.e25f9295.chunk.css": "/list-ashop/static/css/2.e25f9295.chunk.css",
     "static/js/2.9b418dc4.chunk.js": "/list-ashop/static/js/2.9b418dc4.chunk.js",
     "static/js/2.9b418dc4.chunk.js.map": "/list-ashop/static/js/2.9b418dc4.chunk.js.map",
     "index.html": "/list-ashop/index.html",
-    "precache-manifest.2d0283d30cd609172d0a36f12faa4b22.js": "/list-ashop/precache-manifest.2d0283d30cd609172d0a36f12faa4b22.js",
+    "precache-manifest.d09b8dd4c1d964315f72daf13d47f161.js": "/list-ashop/precache-manifest.d09b8dd4c1d964315f72daf13d47f161.js",
     "service-worker.js": "/list-ashop/service-worker.js",
     "static/css/2.e25f9295.chunk.css.map": "/list-ashop/static/css/2.e25f9295.chunk.css.map",
     "static/css/main.f63b579c.chunk.css.map": "/list-ashop/static/css/main.f63b579c.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.e25f9295.chunk.css",
     "static/js/2.9b418dc4.chunk.js",
     "static/css/main.f63b579c.chunk.css",
-    "static/js/main.b74c6da9.chunk.js"
+    "static/js/main.c022df90.chunk.js"
   ]
 }
