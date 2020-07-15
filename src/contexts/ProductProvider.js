@@ -27,13 +27,6 @@ class ProductProvider extends Component {
 
     }
     componentDidMount() {
-        // const productsNew = [...products];
-        // this.setState({
-        //     products: productsNew
-        // }
-        // )
-
-        console.log(categoryProduct, 'test');
 
     }
 
@@ -46,7 +39,7 @@ class ProductProvider extends Component {
         const listProductNew = [...this.state.products];
         let product = listProductNew.find(item => item.fields.slug === slug);
         const category = this.getCategoryProduct(product);
-        product.category_name = category;
+        product.category = category;
         return product;
     }
     addToCart(id) {
@@ -93,9 +86,9 @@ class ProductProvider extends Component {
             progress: undefined,
         });
     }
-    getCategoryProduct(product) {
+    getCategoryProduct(id) {
         const categoriesNew = [...categoryProduct];
-        const category = categoriesNew.find(item => item.id = product.fields.category);
+        const category = categoriesNew.find(item => item.id = id);
         return category;
     }
 
