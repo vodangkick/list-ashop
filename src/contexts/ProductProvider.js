@@ -27,9 +27,21 @@ class ProductProvider extends Component {
 
     }
     componentDidMount() {
+        // this.setProducts();
 
     }
-
+    setProducts = () => {
+        let tempProducts = [];
+        products.forEach((item) => {
+            const singleItem = { ...item };
+            tempProducts = [...tempProducts, singleItem];
+        });
+        this.setState(() => {
+            return {
+                products: tempProducts
+            }
+        })
+    }
     getItem(id) {
         const listProductNew = [...this.state.products];
         const product = listProductNew.find(item => item.sys.id === id);
