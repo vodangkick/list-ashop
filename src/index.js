@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <ProductProvider>
-    <Router basename={window.location.pathname || ''}>
+    <Router >
       <App />
     </Router>
   </ProductProvider>,

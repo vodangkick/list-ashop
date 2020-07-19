@@ -14,6 +14,7 @@ export default function WidgetInner({ items, title, value, type }) {
         <div className="widgets_inner">
             {title ? <h4>{title}</h4> : ''}
             <ul className="list">
+                <li className="active"><a href onClick={(event) => handleChangeFilter(event, 'all', type)}>All</a></li>
                 {types.map((item, index) => <li key={index} ><a href onClick={(event) => handleChangeFilter(event, item, type)}>{type} {item}</a></li>)}
             </ul>
         </div >

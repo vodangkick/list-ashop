@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+.dis-select select {
+  display: inline-block !important;
+}
+.dis-select .nice-select {
+  display: none !important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

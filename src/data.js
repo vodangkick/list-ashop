@@ -392,7 +392,20 @@ const Brand = [
 
 ]
 const posts = [
+    {
+        id: 1,
+        name: 'Astronomy Binoculars A Great Alternative',
+        slug: 'astronomy-binoculars-a-reat-alternative',
+        content: 'content',
+        category: [1, 2],
+        images: {
+            banner: img1,
+            thubnail: img1,
+        },
+        date: '12 Dec, 2017',
+        tag: [1, 2, 3, 4]
 
+    }
 ]
 
 export { products, posts, categoryProduct, Color, Brand }

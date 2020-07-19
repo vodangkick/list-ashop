@@ -2,11 +2,18 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../contexts/ProductProvider';
 import 'jquery';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import Bootstrap from 'bootstrap/dist/js/bootstrap.min.js';
 
 
 export default class Header extends Component {
     componentDidMount() {
+        this.callBackBootstrap();
+    }
+    componentDidUpdate() {
+        this.callBackBootstrap();
+    }
+    callBackBootstrap() {
+        return (<Bootstrap />)
     }
     render() {
         return (
@@ -56,7 +63,7 @@ export default class Header extends Component {
                                         </li>
                                         }
                                     </ProductConsumer>
-                                    <li className="nav-item"><Link to="/shop" className="search"><i className="lnr lnr-magnifier" /></Link></li>
+                                    <li className="nav-item"><Link to="/blog" className="search"><i className="lnr lnr-magnifier" /></Link></li>
                                 </ul>
                             </div>
                         </div>

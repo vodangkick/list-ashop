@@ -22,8 +22,7 @@ class ProductProvider extends Component {
         priceFilter: 'all',
         // paging
         currentPage: 1,
-        todosPerPage: 4
-
+        todosPerPage: 6
 
     }
     componentDidMount() {
@@ -194,25 +193,28 @@ class ProductProvider extends Component {
     }
 
     handleChangeFilter(event, id, type) {
-        event.preventDefault();
-        type = type + 'Filter';
-        this.setState({
-            [type]: id
-        }, this.FilterProduct.bind(this))
-
-        if (event.target.closest('.list').querySelector('.active') !== null) {
-            event.target.closest('.list').querySelector('.active').classList.remove('active');
-            event.target.closest('li').classList.add("active");
-        } else {
-            event.target.closest('li').classList.add("active");
+        const target = event.target;
+        const value = target.tagName === "A" ? id : target.value;
+        if (target.tagName === "A") {
+            event.preventDefault();
+            if (target.closest('.list').querySelector('.active') !== null) {
+                target.closest('.list').querySelector('.active').classList.remove('active');
+                target.closest('li').classList.add("active");
+            } else {
+                target.closest('li').classList.add("active");
+            }
         }
 
+        type = type === "todosPerPage" ? type : type + 'Filter';
+        this.setState({
+            [type]: value,
+        }, this.FilterProduct.bind(this))
 
     }
+
     FilterProduct() {
         let { products, categoryFilter, colorFilter, brandFilter, priceFilter } = this.state;
         let tempProduct = [...products];
-        console.log(categoryFilter, 'state');
         if (categoryFilter !== 'all') {
             tempProduct = tempProduct.filter(product => product.fields.category === categoryFilter);
         }
@@ -223,16 +225,18 @@ class ProductProvider extends Component {
             tempProduct = tempProduct.filter(product => product.fields.brand === brandFilter);
         }
         if (priceFilter !== 'all') {
-            let maxPrice = Math.max(tempProduct.map(item => item.price));
+            if (priceFilter === 'max') {
+                tempProduct = tempProduct.sort((a, b) => b.fields.price - a.fields.price);
+            } else if (priceFilter === 'min') {
+                tempProduct = tempProduct.sort((a, b) => a.fields.price - b.fields.price);
+            }
         }
-
         this.setState({
             sortShop: tempProduct
         })
     }
-
+    // pagination
     handlePageChange(pageNumber) {
-        console.log(`active page is ${pageNumber}`);
         this.setState({ activePage: pageNumber });
     }
 
@@ -240,6 +244,18 @@ class ProductProvider extends Component {
         this.setState({
             currentPage: Number(event.target.id)
         });
+    }
+    nextPaging() {
+        let currentPage = this.state.currentPage;
+        this.setState({
+            currentPage: currentPage + 1
+        })
+    }
+    prevPaging() {
+        let currentPage = this.state.currentPage;
+        this.setState({
+            currentPage: currentPage - 1
+        })
     }
     render() {
         return (
@@ -253,7 +269,10 @@ class ProductProvider extends Component {
                 clearCart: this.clearCart.bind(this),
                 cartOnShipping: this.cartOnShipping.bind(this),
                 handleChangeFilter: this.handleChangeFilter.bind(this),
-                handleClick: this.handleClick.bind(this)
+                handleClick: this.handleClick.bind(this),
+                nextPaging: this.nextPaging.bind(this),
+                prevPaging: this.prevPaging.bind(this)
+
 
             }}>
                 {this.props.children}
