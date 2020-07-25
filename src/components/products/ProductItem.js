@@ -11,7 +11,7 @@ export default function ProductItem({ item, value, classname }) {
         <div className={classname ? classname : 'col-lg-3 col-md-4 col-sm-6'}>
             <div className="f_p_item">
                 <div className="f_p_img">
-                    <Link to={`/${slug}`}>
+                    <Link to={`/product/${slug}`}>
                         <img className="img-fluid" src={url_img} alt="" />
                     </Link>
                     <div className="p_icon">
@@ -21,7 +21,7 @@ export default function ProductItem({ item, value, classname }) {
                         </a>
                     </div>
                 </div>
-                <Link to={`/${slug}`} item={item}><h4>{name}</h4></Link>
+                <Link to={`/product/${slug}`} item={item}><h4>{name}</h4></Link>
                 <h5>$ {price}</h5>
             </div>
         </div>

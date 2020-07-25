@@ -12,6 +12,19 @@
 .dis-select .nice-select {
   display: none !important;
 }
+.carousel-indicators li img {
+  max-width: 100%;
+}
+.s_product_img .carousel .carousel-indicators li {
+  overflow: hidden;
+}
+.shipping_box li a {
+  cursor: pointer;
+}
+.header_area .navbar .nav .nav-item .nav-link.active {
+  color: #c5322d;
+  font-weight: bold;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

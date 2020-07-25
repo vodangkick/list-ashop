@@ -11,10 +11,10 @@ export default function ProductItemList({ item, value }) {
             <div className="most_p_list">
                 <div className="media">
                     <div className="d-flex">
-                        <Link to={`/${slug}`}><img src={url_img} alt="product" /></Link>
+                        <Link to={`/product/${slug}`}><img src={url_img} alt="product" /></Link>
                     </div>
                     <div className="media-body">
-                        <Link to={`/${slug}`}><h4>{name}</h4></Link>
+                        <Link to={`/product/${slug}`}><h4>{name}</h4></Link>
                         <h3>${price}</h3>
                     </div>
                 </div>

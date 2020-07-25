@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
-import BannerSecond from '../components/sections/BannerSecond';
-import CartContainer from '../components/products/Cart/CartContainer';
-import CartEmpty from '../components/products/Cart/CartEmpty';
-import { ProductsContext } from '../contexts/ProductProvider';
+import Header from '../../layout/Header';
+import Footer from '../../layout/Footer';
+import BannerSecond from '../../components/sections/BannerSecond';
+import CartContainer from '../../components/products/Cart/CartContainer';
+import CartEmpty from '../../components/products/Cart/CartEmpty';
+import { ProductsContext } from '../../contexts/ProductProvider';
 
 
 export default class Cart extends Component {

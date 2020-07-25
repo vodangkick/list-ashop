@@ -1,19 +1,19 @@
-import img1 from "./asset/img/product/feature-product/f-p-1.jpg";
-import imgSmall1 from "./asset/img/product/most-product/m-product-1.jpg";
-import img2 from "./asset/img/product/feature-product/f-p-2.jpg";
-import imgSmall2 from "./asset/img/product/most-product/m-product-2.jpg";
-import img3 from "./asset/img/product/feature-product/f-p-3.jpg";
-import imgSmall3 from "./asset/img/product/most-product/m-product-3.jpg";
-import img4 from "./asset/img/product/feature-product/f-p-4.jpg";
-import imgSmall4 from "./asset/img/product/most-product/m-product-4.jpg";
-import img5 from "./asset/img/product/feature-product/f-p-5.jpg";
-import imgSmall5 from "./asset/img/product/most-product/m-product-5.jpg";
-import img6 from "./asset/img/product/feature-product/f-p-6.jpg";
-import imgSmall6 from "./asset/img/product/most-product/m-product-6.jpg";
-import img7 from "./asset/img/product/feature-product/f-p-7.jpg";
-import imgSmall7 from "./asset/img/product/most-product/m-product-7.jpg";
-import img8 from "./asset/img/product/feature-product/f-p-8.jpg";
-import imgSmall8 from "./asset/img/product/most-product/m-product-8.jpg";
+import img1 from "../asset/img/product/feature-product/f-p-1.jpg";
+import imgSmall1 from "../asset/img/product/most-product/m-product-1.jpg";
+import img2 from "../asset/img/product/feature-product/f-p-2.jpg";
+import imgSmall2 from "../asset/img/product/most-product/m-product-2.jpg";
+import img3 from "../asset/img/product/feature-product/f-p-3.jpg";
+import imgSmall3 from "../asset/img/product/most-product/m-product-3.jpg";
+import img4 from "../asset/img/product/feature-product/f-p-4.jpg";
+import imgSmall4 from "../asset/img/product/most-product/m-product-4.jpg";
+import img5 from "../asset/img/product/feature-product/f-p-5.jpg";
+import imgSmall5 from "../asset/img/product/most-product/m-product-5.jpg";
+import img6 from "../asset/img/product/feature-product/f-p-6.jpg";
+import imgSmall6 from "../asset/img/product/most-product/m-product-6.jpg";
+import img7 from "../asset/img/product/feature-product/f-p-7.jpg";
+import imgSmall7 from "../asset/img/product/most-product/m-product-7.jpg";
+import img8 from "../asset/img/product/feature-product/f-p-8.jpg";
+import imgSmall8 from "../asset/img/product/most-product/m-product-8.jpg";
 
 
 const products = [
@@ -391,21 +391,6 @@ const Brand = [
     },
 
 ]
-const posts = [
-    {
-        id: 1,
-        name: 'Astronomy Binoculars A Great Alternative',
-        slug: 'astronomy-binoculars-a-reat-alternative',
-        content: 'content',
-        category: [1, 2],
-        images: {
-            banner: img1,
-            thubnail: img1,
-        },
-        date: '12 Dec, 2017',
-        tag: [1, 2, 3, 4]
 
-    }
-]
 
-export { products, posts, categoryProduct, Color, Brand }
+export { products, categoryProduct, Color, Brand }

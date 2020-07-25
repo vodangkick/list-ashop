@@ -2,11 +2,13 @@ import React from 'react'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 
-export default function CheckOut() {
+export default function Login() {
     return (
         <>
             <Header />
-                Check Out Page
+            <div className="container">
+                test name
+            </div>
             <Footer />
         </>
     )

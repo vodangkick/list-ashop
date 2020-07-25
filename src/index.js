@@ -4,15 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ProductProvider } from './contexts/ProductProvider';
+import { PostProvider } from './contexts/PostProvider';
+
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
 ReactDOM.render(
-  <ProductProvider>
-    <Router basename={process.env.PUBLIC_URL}>
-      <App />
-    </Router>
-  </ProductProvider>,
+
+  <Router basename={process.env.PUBLIC_URL}>
+    <PostProvider>
+      <ProductProvider>
+        <App />
+      </ProductProvider>
+    </PostProvider>
+  </Router >
+
+  ,
   document.getElementById('root')
 );
 

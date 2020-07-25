@@ -9,7 +9,7 @@ export default class App extends Component {
             offset: 0,
             data: [],
             perPage: 10,
-            currentPage: 0
+            currentPage: 0,
         };
         this.handlePageClick = this.handlePageClick.bind(this);
     }

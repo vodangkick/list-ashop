@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { ProductConsumer } from '../contexts/ProductProvider';
 import 'jquery';
 import Bootstrap from 'bootstrap/dist/js/bootstrap.min.js';
+import NavBar from './NavBar';
 
 
 export default class Header extends Component {
@@ -43,29 +43,7 @@ export default class Header extends Component {
                                 <span className="icon-bar" />
                                 <span className="icon-bar" />
                             </button>
-                            <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-                                <ul className="nav navbar-nav menu_nav ml-auto">
-                                    <li className="nav-item active"><Link className="nav-link" to="/" >Home</Link></li>
-                                    <li className="nav-item">
-                                        <Link to="/shop" className="nav-link">Shop</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/blog" className="nav-link">Blog</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to="/contact">Contact</Link>
-                                    </li>
-                                </ul>
-                                <ul className="nav navbar-nav navbar-right">
-                                    <ProductConsumer>
-                                        {value => <li className="nav-item">
-                                            <Link to="/cart" className="cart">({value.cart.length})<i className="lnr lnr lnr-cart" /></Link>
-                                        </li>
-                                        }
-                                    </ProductConsumer>
-                                    <li className="nav-item"><Link to="/blog" className="search"><i className="lnr lnr-magnifier" /></Link></li>
-                                </ul>
-                            </div>
+                            <NavBar />
                         </div>
                     </nav>
                 </div>

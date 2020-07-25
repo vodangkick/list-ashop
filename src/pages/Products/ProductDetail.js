@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
-import { ProductsContext } from '../contexts/ProductProvider';
-import { BannerSingle, ProductDescriptionArea, ProductArea } from '../components/products/Single';
-import { MostSearchProduct } from '../components/sections';
+import Header from '../../layout/Header';
+import Footer from '../../layout/Footer';
+import { ProductsContext } from '../../contexts/ProductProvider';
+import { BannerSingle, ProductDescriptionArea, ProductArea } from '../../components/products/Single';
+import { MostSearchProduct } from '../../components/sections';
 
 
 export default class ProductDetail extends Component {

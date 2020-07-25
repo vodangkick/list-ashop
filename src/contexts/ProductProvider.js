@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { products, categoryProduct, Color, Brand } from '../data';
+import { products, categoryProduct, Color, Brand } from '../api/ProductApi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const ProductsContext = React.createContext();
 
 class ProductProvider extends Component {
+
     state = {
         products: products,
         cart: [],
-        colors: Color,
-        brands: Brand,
+        color: Color,
+        brand: Brand,
         sortShop: products,
         quanlity: 1,
         category: categoryProduct,
@@ -20,20 +21,29 @@ class ProductProvider extends Component {
         brandFilter: "all",
         categoryFilter: "all",
         priceFilter: 'all',
+        isLoading: true,
         // paging
         currentPage: 1,
         todosPerPage: 6
 
     }
+
+    // Component Did Mount
+
     componentDidMount() {
 
     }
+
+    // Get Item width ID 
 
     getItem(id) {
         const listProductNew = [...this.state.products];
         const product = listProductNew.find(item => item.sys.id === id);
         return product;
     }
+
+
+    // GET Product Detail
     getProductDetail(slug) {
         const listProductNew = [...this.state.products];
         let product = listProductNew.find(item => item.fields.slug === slug);
@@ -41,6 +51,9 @@ class ProductProvider extends Component {
         product.category = category;
         return product;
     }
+
+    // add To Cart 
+
     addToCart(id) {
         let product = this.getItem(id);
         let listCart = [...this.state.cart];
@@ -59,7 +72,7 @@ class ProductProvider extends Component {
             product.fields.count = 1;
 
         } else {
-            // da in cart 
+            //  in carting
             product.fields.count = product.fields.count + this.state.quanlity;
             product.fields.subtotal = parseInt(product.fields.count * product.fields.price);
             this.setState({
@@ -73,6 +86,8 @@ class ProductProvider extends Component {
         );
     }
 
+    // Messeger add & remove Post in Cart
+
     notify(content) {
         toast(
             content, {
@@ -85,6 +100,8 @@ class ProductProvider extends Component {
             progress: undefined,
         });
     }
+
+    // Get Product 
     getCategoryProduct(id) {
         const categoriesNew = [...categoryProduct];
         const category = categoriesNew.find(item => item.id = id);
@@ -192,6 +209,9 @@ class ProductProvider extends Component {
 
     }
 
+
+    // Filter Product
+
     handleChangeFilter(event, id, type) {
         const target = event.target;
         const value = target.tagName === "A" ? id : target.value;
@@ -235,7 +255,9 @@ class ProductProvider extends Component {
             sortShop: tempProduct
         })
     }
-    // pagination
+
+    // Pagination
+
     handlePageChange(pageNumber) {
         this.setState({ activePage: pageNumber });
     }
@@ -257,6 +279,9 @@ class ProductProvider extends Component {
             currentPage: currentPage - 1
         })
     }
+
+    // Render 
+
     render() {
         return (
             <ProductsContext.Provider value={{
@@ -281,6 +306,7 @@ class ProductProvider extends Component {
         )
     }
 }
+
 const ProductConsumer = ProductsContext.Consumer;
 
 export default function withContainerProduct(ComponentProduct) {
