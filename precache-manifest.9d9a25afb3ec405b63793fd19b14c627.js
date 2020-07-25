@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "673ba7bf39f904361fa03d91cf61adf5",
+    "revision": "c3a4ade5b12ec8540a9ec73f53c7e64d",
     "url": "/list-ashop/index.html"
   },
   {
-    "revision": "c4123d159328d0be39e6",
+    "revision": "ff8e3f6084d90e4bc340",
     "url": "/list-ashop/static/css/2.e25f9295.chunk.css"
   },
   {
-    "revision": "94fa7cb8e5dcbfbd7ae5",
-    "url": "/list-ashop/static/css/main.84c1a8ab.chunk.css"
+    "revision": "abd8341715e21086166d",
+    "url": "/list-ashop/static/css/main.a738e4c0.chunk.css"
   },
   {
-    "revision": "c4123d159328d0be39e6",
-    "url": "/list-ashop/static/js/2.cef0fc8c.chunk.js"
+    "revision": "ff8e3f6084d90e4bc340",
+    "url": "/list-ashop/static/js/2.64d5f9d4.chunk.js"
   },
   {
     "revision": "2476c6bd39df87c432596ffb07a402df",
-    "url": "/list-ashop/static/js/2.cef0fc8c.chunk.js.LICENSE.txt"
+    "url": "/list-ashop/static/js/2.64d5f9d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "94fa7cb8e5dcbfbd7ae5",
-    "url": "/list-ashop/static/js/main.1959b763.chunk.js"
+    "revision": "abd8341715e21086166d",
+    "url": "/list-ashop/static/js/main.c9c6ab32.chunk.js"
   },
   {
     "revision": "0e5a384db3b683e7c7ef",
@@ -58,5 +58,29 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "85ea319c843ef0a4edf6547b5c7adce8",
     "url": "/list-ashop/static/media/f-p-8.85ea319c.jpg"
+  },
+  {
+    "revision": "fe76cd61d447bbf47ef6602850a11896",
+    "url": "/list-ashop/static/media/feature-img1.fe76cd61.jpg"
+  },
+  {
+    "revision": "b0c45047a2cc622462ffb3fb585834f0",
+    "url": "/list-ashop/static/media/m-blog-1.b0c45047.jpg"
+  },
+  {
+    "revision": "5263da3096f0b8b0c0d6f7f326095cbd",
+    "url": "/list-ashop/static/media/m-blog-2.5263da30.jpg"
+  },
+  {
+    "revision": "53194b0e74d6b03a2e4acaed1a64462d",
+    "url": "/list-ashop/static/media/m-blog-3.53194b0e.jpg"
+  },
+  {
+    "revision": "1ec80ebeea8c2b15fb9dcd269c03dcd4",
+    "url": "/list-ashop/static/media/m-blog-4.1ec80ebe.jpg"
+  },
+  {
+    "revision": "85515b5ab999fd8c5d8cc69313106264",
+    "url": "/list-ashop/static/media/m-blog-5.85515b5a.jpg"
   }
 ]);
