@@ -1,25 +1,37 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { ProductConsumer } from '../contexts/ProductProvider';
+import classnames from 'classnames';
 
 export default function NavBar() {
     const MENU_TOP = [
         { title: 'Home', slug: '/' },
+        { title: 'Shop', slug: '/shop' },
+        { title: 'Blog', slug: '/blog' },
         {
-            title: 'Shop', slug: '/shop', child: [
-                { title: 'child 1', slug: '/child-1' },
-                { title: 'child 2', slug: '/child-2' }
+            title: 'Pages', slug: '/pages', child: [
+                { title: 'Login', slug: '/login' },
+                { title: 'Register', slug: '/register' },
+                { title: 'Checkout', slug: '/checkout' },
             ]
         },
-        { title: 'Blog', slug: '/blog' },
         { title: 'Contact', slug: '/contact' }
     ]
 
     return (
         <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul className="nav navbar-nav menu_nav ml-auto">
-                {MENU_TOP.map((item, index) => <li key={index} className="nav-item">
-                    <NavLink exact={true} activeClassName="active" className="nav-link" to={item.slug} >{item.title}</NavLink></li>)}
+                {MENU_TOP.map((item, index) => <li key={index} className={classnames('nav-item', { submenu: item.child !== null, dropdown: item.child !== null })}>
+                    <NavLink exact={true} activeClassName="active" data-toggle={item.child ? 'dropdown' : ''} className="nav-link" to={item.slug} >{item.title}</NavLink>
+                    {item.child ?
+                        <ul className="dropdown-menu">
+                            {item.child.map((itemChild, iChild) =>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to={itemChild.slug} >{itemChild.title}</Link>
+                                </li>)}
+                        </ul>
+                        : ''}
+                </li>)}
             </ul>
             <ul className="nav navbar-nav navbar-right">
                 <ProductConsumer>

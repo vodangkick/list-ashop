@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import classnames from 'classnames';
 
 export default function ProductDescriptionArea({ product }) {
     const { category, fields } = product;
@@ -9,25 +10,23 @@ export default function ProductDescriptionArea({ product }) {
     if (!category) {
         return category;
     }
+    const TAB_INFO = [
+        { id: 'home', title: "Description" },
+        { id: 'profile', title: "Specification" },
+        { id: 'contact', title: "Comments" },
+        { id: 'review', title: "Reviews" },
+    ]
     return (
         <section className="product_description_area">
             <div className="container">
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
-                    <li className="nav-item">
-                        <Link className="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Specification</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Comments</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</Link>
-                    </li>
+                    {TAB_INFO.map((item, index) => <li className="nav-item">
+                        <a key={index} className={classnames('nav-link', { active: index === 0 })} id={`${item.id}-tab`} data-toggle="tab" href={`#${item.id}`} role="tab" aria-controls={item.id} aria-selected="true">{item.title}</a>
+                    </li>)}
+
                 </ul>
                 <div className="tab-content" id="myTabContent">
-                    <div className="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         {description}
                     </div>
                     <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -179,7 +178,7 @@ export default function ProductDescriptionArea({ product }) {
                             </div>
                         </div>
                     </div>
-                    <div className="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    <div className="tab-pane fade " id="review" role="tabpanel" aria-labelledby="review-tab">
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="row total_rate">

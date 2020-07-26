@@ -12,8 +12,8 @@ export default function PostItemList({ item, value }) {
                     <div className="post_tag">
                         <Link to="/">Food,</Link>
                         <Link className="active" to="/">Technology,</Link>
-                        <Link to="/">Politics,</Link>
-                        <Link to="/">Lifestyle</Link>
+                        {/* <Link to="/">Politics,</Link>
+                        <Link to="/">Lifestyle</Link> */}
                     </div>
                     <ul className="blog_meta list">
                         <li><Link to="/">Mark wiens<i className="lnr lnr-user" /></Link></li>

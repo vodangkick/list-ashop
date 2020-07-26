@@ -15,7 +15,7 @@ export default function ProductItem({ item, value, classname }) {
                         <img className="img-fluid" src={url_img} alt="" />
                     </Link>
                     <div className="p_icon">
-                        <Link to="/"><i className="lnr lnr-heart" /></Link>
+                        {/* <Link to="/"><i className="lnr lnr-heart" /></Link> */}
                         <a href="javascrip:void(0)" onClick={() => addToCart(sys.id)}  >
                             <i className="lnr lnr-cart" />
                         </a>

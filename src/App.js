@@ -7,6 +7,9 @@ import Blog from './pages/Posts/Blog';
 import Contact from './pages/Contact';
 import Cart from './pages/Products/Cart';
 import CheckOut from './pages/Products/CheckOut';
+import Login from './pages/Login';
+import Register from './pages/Register';
+
 
 import ProductDetail from './pages/Products/ProductDetail';
 import PostDetail from './pages/Posts/PostDetail';
@@ -27,6 +30,8 @@ function App() {
         <Route path='/cart' exact component={Cart} />
         <Route path='/checkout' exact component={CheckOut} />
         <Route path='/blog/:slug' exact component={PostDetail} />
+        <Route path='/login' exact component={Login} />
+        <Route path='/register' exact component={Register} />
         <Route path='/product/:slug' exact component={ProductDetail} />
         <Route component={Default} />
       </Switch>

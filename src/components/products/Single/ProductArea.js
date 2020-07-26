@@ -17,22 +17,10 @@ export default function ProductArea({ product, value }) {
                                     <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active">
                                         <img src={urlProduct} alt="" />
                                     </li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to={1}>
-                                        <img src="img/product/single-product/s-product-s-3.jpg" alt="" />
-                                    </li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to={2}>
-                                        <img src="img/product/single-product/s-product-s-4.jpg" alt="" />
-                                    </li>
                                 </ol>
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
                                         <img className="d-block w-100" src={urlProduct} alt="First slide" />
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img className="d-block w-100" src="img/product/single-product/s-product-1.jpg" alt="Second slide" />
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img className="d-block w-100" src="img/product/single-product/s-product-1.jpg" alt="Third slide" />
                                     </div>
                                 </div>
                             </div>
@@ -55,8 +43,8 @@ export default function ProductArea({ product, value }) {
                             </div>
                             <div className="card_area">
                                 <button onClick={() => addToCart(sys.id)} className="main_btn" to="/">Add to Cart</button>
-                                <Link className="icon_btn" to="/"><i className="lnr lnr lnr-diamond" /></Link>
-                                <Link className="icon_btn" to="/"><i className="lnr lnr lnr-heart" /></Link>
+                                {/* <Link className="icon_btn" to="/"><i className="lnr lnr lnr-diamond" /></Link>
+                                <Link className="icon_btn" to="/"><i className="lnr lnr lnr-heart" /></Link> */}
                             </div>
                         </div>
                     </div>
