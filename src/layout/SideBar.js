@@ -14,7 +14,7 @@ export default function SideBar() {
                     </div>{/* /input-group */}
                     <div className="br" />
                 </aside>
-                <aside className="single_sidebar_widget author_widget">
+                {/* <aside className="single_sidebar_widget author_widget">
                     <img className="author_img rounded-circle" src="img/blog/author.png" alt="" />
                     <h4>Charlie Barber</h4>
                     <p>Senior blog writer</p>
@@ -26,8 +26,8 @@ export default function SideBar() {
                     </div>
                     <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
                     <div className="br" />
-                </aside>
-                <aside className="single_sidebar_widget popular_post_widget">
+                </aside> */}
+                {/* <aside className="single_sidebar_widget popular_post_widget">
                     <h3 className="widget_title">Popular Posts</h3>
                     <div className="media post_item">
                         <img src="img/blog/popular-post/post1.jpg" alt="post" />
@@ -58,7 +58,7 @@ export default function SideBar() {
                         </div>
                     </div>
                     <div className="br" />
-                </aside>
+                </aside> */}
                 <aside className="single_sidebar_widget ads_widget">
                     <Link to="/"><img className="img-fluid" src="img/blog/add.jpg" alt="" /></Link>
                     <div className="br" />
